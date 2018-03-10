@@ -110,7 +110,7 @@
 #include <string>
 #include <google/protobuf/stubs/common.h>
 
-namespace gxxgle {
+namespace google {
 
 namespace protobuf {
 namespace io {
@@ -244,5 +244,5 @@ class LIBPROTOBUF_EXPORT ZeroCopyOutputStream {
 }  // namespace io
 }  // namespace protobuf
 
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_IO_ZERO_COPY_STREAM_H__

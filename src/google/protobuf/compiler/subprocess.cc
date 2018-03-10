@@ -46,7 +46,7 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/stubs/substitute.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace compiler {
 
@@ -460,4 +460,4 @@ bool Subprocess::Communicate(const Message& input, Message* output,
 
 }  // namespace compiler
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

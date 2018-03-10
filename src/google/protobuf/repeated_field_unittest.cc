@@ -49,7 +49,7 @@
 #include <gtest/gtest.h>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace gxxgle {
+namespace google {
 using protobuf_unittest::TestAllTypes;
 
 namespace protobuf {
@@ -1287,8 +1287,8 @@ TEST_F(RepeatedPtrFieldPtrsIteratorTest, Sort) {
 
 // -----------------------------------------------------------------------------
 // Unit-tests for the insert iterators
-// gxxgle::protobuf::RepeatedFieldBackInserter,
-// gxxgle::protobuf::AllocatedRepeatedPtrFieldBackInserter
+// google::protobuf::RepeatedFieldBackInserter,
+// google::protobuf::AllocatedRepeatedPtrFieldBackInserter
 // Ported from util/gtl/proto-array-iterators_unittest.
 
 class RepeatedFieldInsertionIteratorsTest : public testing::Test {
@@ -1439,4 +1439,4 @@ TEST_F(RepeatedFieldInsertionIteratorsTest,
 }  // namespace
 
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

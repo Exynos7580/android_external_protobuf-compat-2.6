@@ -48,7 +48,7 @@
 #include <set>
 #endif
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 #ifdef MISSING_HASH
@@ -227,6 +227,6 @@ struct streq {
 };
 
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google
 
 #endif  // GOOGLE_PROTOBUF_STUBS_HASH_H__

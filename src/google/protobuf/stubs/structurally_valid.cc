@@ -3,7 +3,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace internal {
 
@@ -533,4 +533,4 @@ bool IsStructurallyValidUTF8(const char* buf, int len) {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

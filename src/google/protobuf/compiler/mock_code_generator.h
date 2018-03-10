@@ -36,7 +36,7 @@
 #include <string>
 #include <google/protobuf/compiler/code_generator.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace compiler {
 
@@ -113,5 +113,5 @@ class MockCodeGenerator : public CodeGenerator {
 }  // namespace compiler
 }  // namespace protobuf
 
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_COMPILER_MOCK_CODE_GENERATOR_H__

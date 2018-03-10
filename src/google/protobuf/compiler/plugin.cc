@@ -55,7 +55,7 @@
 #include <google/protobuf/io/zero_copy_stream_impl.h>
 
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace compiler {
 
@@ -160,4 +160,4 @@ int PluginMain(int argc, char* argv[], const CodeGenerator* generator) {
 
 }  // namespace compiler
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

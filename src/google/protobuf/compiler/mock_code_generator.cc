@@ -44,7 +44,7 @@
 #include <gtest/gtest.h>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace compiler {
 
@@ -237,4 +237,4 @@ string MockCodeGenerator::GetOutputFileContent(
 
 }  // namespace compiler
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

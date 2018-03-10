@@ -93,7 +93,7 @@ TEST(CppPluginTest, PluginTest) {
                              "}\n",
                              true));
 
-  gxxgle::protobuf::compiler::CommandLineInterface cli;
+  google::protobuf::compiler::CommandLineInterface cli;
   cli.SetInputsAreProtoPathRelative(true);
 
   CppGenerator cpp_generator;

@@ -36,7 +36,7 @@
 
 #include <limits>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace internal {
 
@@ -62,4 +62,4 @@ void InitEmptyString() {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

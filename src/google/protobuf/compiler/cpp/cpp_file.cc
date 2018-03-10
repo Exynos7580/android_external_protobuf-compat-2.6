@@ -276,7 +276,7 @@ void FileGenerator::GenerateHeader(io::Printer* printer) {
   // Close up namespace.
   GenerateNamespaceClosers(printer);
 
-  // Emit GetEnumDescriptor specializations into gxxgle::protobuf namespace:
+  // Emit GetEnumDescriptor specializations into google::protobuf namespace:
   if (HasDescriptorMethods(file_)) {
     // The SWIG conditional is to avoid a null-pointer dereference
     // (bug 1984964) in swig-1.3.21 resulting from the following syntax:
@@ -358,14 +358,14 @@ void FileGenerator::GenerateSource(io::Printer* printer) {
     }
     for (int i = 0; i < file_->enum_type_count(); i++) {
       printer->Print(
-        "const ::gxxgle::protobuf::EnumDescriptor* $name$_descriptor_ = NULL;\n",
+        "const ::google::protobuf::EnumDescriptor* $name$_descriptor_ = NULL;\n",
         "name", ClassName(file_->enum_type(i), false));
     }
 
     if (HasGenericServices(file_)) {
       for (int i = 0; i < file_->service_count(); i++) {
         printer->Print(
-          "const ::gxxgle::protobuf::ServiceDescriptor* $name$_descriptor_ = NULL;\n",
+          "const ::google::protobuf::ServiceDescriptor* $name$_descriptor_ = NULL;\n",
           "name", file_->service(i)->name());
       }
     }
@@ -454,8 +454,8 @@ void FileGenerator::GenerateBuildDescriptors(io::Printer* printer) {
 
     // Get the file's descriptor from the pool.
     printer->Print(
-      "const ::gxxgle::protobuf::FileDescriptor* file =\n"
-      "  ::gxxgle::protobuf::DescriptorPool::generated_pool()->FindFileByName(\n"
+      "const ::google::protobuf::FileDescriptor* file =\n"
+      "  ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(\n"
       "    \"$filename$\");\n"
       // Note that this GOOGLE_CHECK is necessary to prevent a warning about "file"
       // being unused when compiling an empty .proto file.
@@ -491,7 +491,7 @@ void FileGenerator::GenerateBuildDescriptors(io::Printer* printer) {
       "\n"
       "GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);\n"
       "inline void protobuf_AssignDescriptorsOnce() {\n"
-      "  ::gxxgle::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,\n"
+      "  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,\n"
       "                 &$assigndescriptorsname$);\n"
       "}\n"
       "\n",
@@ -578,7 +578,7 @@ void FileGenerator::GenerateBuildDescriptors(io::Printer* printer) {
     file_proto.SerializeToString(&file_data);
 
     printer->Print(
-      "::gxxgle::protobuf::DescriptorPool::InternalAddGeneratedFile(");
+      "::google::protobuf::DescriptorPool::InternalAddGeneratedFile(");
 
     // Only write 40 bytes per line.
     static const int kBytesPerLine = 40;
@@ -594,7 +594,7 @@ void FileGenerator::GenerateBuildDescriptors(io::Printer* printer) {
 
     // Call MessageFactory::InternalRegisterGeneratedFile().
     printer->Print(
-      "::gxxgle::protobuf::MessageFactory::InternalRegisterGeneratedFile(\n"
+      "::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(\n"
       "  \"$filename$\", &protobuf_RegisterTypes);\n",
       "filename", file_->name());
   }
@@ -613,7 +613,7 @@ void FileGenerator::GenerateBuildDescriptors(io::Printer* printer) {
   }
 
   printer->Print(
-    "::gxxgle::protobuf::internal::OnShutdown(&$shutdownfilename$);\n",
+    "::google::protobuf::internal::OnShutdown(&$shutdownfilename$);\n",
     "shutdownfilename", GlobalShutdownFileName(file_->name()));
 
   printer->Outdent();
@@ -633,7 +633,7 @@ void FileGenerator::GenerateBuildDescriptors(io::Printer* printer) {
     // Without.
     "GOOGLE_PROTOBUF_DECLARE_ONCE($adddescriptorsname$_once_);\n"
     "void $adddescriptorsname$() {\n"
-    "  ::gxxgle::protobuf::GoogleOnceInit(&$adddescriptorsname$_once_,\n"
+    "  ::google::protobuf::GoogleOnceInit(&$adddescriptorsname$_once_,\n"
     "                 &$adddescriptorsname$_impl);\n"
     "}\n",
     // Vars.

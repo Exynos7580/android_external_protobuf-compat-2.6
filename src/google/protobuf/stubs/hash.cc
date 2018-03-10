@@ -32,10 +32,10 @@
 
 #include <google/protobuf/stubs/hash.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 // Nothing needed here right now.
 
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

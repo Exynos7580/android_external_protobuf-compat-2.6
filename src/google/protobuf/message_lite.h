@@ -41,7 +41,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 namespace io {
@@ -243,5 +243,5 @@ class LIBPROTOBUF_EXPORT MessageLite {
 
 }  // namespace protobuf
 
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_MESSAGE_LITE_H__

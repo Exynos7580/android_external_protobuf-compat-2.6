@@ -47,7 +47,7 @@
 #include <google/protobuf/stubs/common.h>
 
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace io {
 
@@ -354,5 +354,5 @@ class LIBPROTOBUF_EXPORT LimitingInputStream : public ZeroCopyInputStream {
 }  // namespace io
 }  // namespace protobuf
 
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_IO_ZERO_COPY_STREAM_IMPL_H__

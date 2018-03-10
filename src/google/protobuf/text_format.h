@@ -47,7 +47,7 @@
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/message.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 namespace io {
@@ -469,5 +469,5 @@ inline TextFormat::ParseInfoTree* TextFormat::CreateNested(
 
 }  // namespace protobuf
 
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_TEXT_FORMAT_H__

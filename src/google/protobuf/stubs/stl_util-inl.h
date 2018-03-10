@@ -35,7 +35,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 // STLDeleteContainerPointers()
@@ -116,6 +116,6 @@ void STLDeleteValues(T *v) {
 }
 
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google
 
 #endif  // GOOGLE_PROTOBUF_STUBS_STL_UTIL_INL_H__

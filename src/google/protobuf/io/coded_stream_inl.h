@@ -41,7 +41,7 @@
 #include <string>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace io {
 
@@ -65,5 +65,5 @@ inline bool CodedInputStream::InternalReadStringInline(string* buffer,
 
 }  // namespace io
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_IO_CODED_STREAM_INL_H__

@@ -42,7 +42,7 @@
 #define EXPECT_EQ GOOGLE_CHECK_EQ
 #define ASSERT_EQ GOOGLE_CHECK_EQ
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 void TestUtilLite::SetAllFields(unittest::TestAllTypesLite* message) {
@@ -1582,4 +1582,4 @@ void TestUtilLite::ExpectPackedExtensionsModified(
 }
 
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

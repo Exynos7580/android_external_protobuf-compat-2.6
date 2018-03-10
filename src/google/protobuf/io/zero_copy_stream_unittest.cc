@@ -72,7 +72,7 @@
 #include <google/protobuf/testing/file.h>
 #include <gtest/gtest.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace io {
 namespace {
@@ -962,4 +962,4 @@ TEST(ZeroSizeArray, Output) {
 }  // namespace
 }  // namespace io
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

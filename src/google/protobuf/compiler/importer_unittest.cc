@@ -47,7 +47,7 @@
 #include <google/protobuf/testing/googletest.h>
 #include <gtest/gtest.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace compiler {
 
@@ -614,4 +614,4 @@ TEST_F(DiskSourceTreeTest, VirtualFileToDiskFile) {
 
 }  // namespace compiler
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

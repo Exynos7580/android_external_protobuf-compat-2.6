@@ -122,7 +122,7 @@
 
 #define GOOGLE_PROTOBUF_HAS_ONEOF
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 // Defined in this file.
@@ -285,7 +285,7 @@ class LIBPROTOBUF_EXPORT Message : public MessageLite {
   // Introspection ---------------------------------------------------
 
   // Typedef for backwards-compatibility.
-  typedef gxxgle::protobuf::Reflection Reflection;
+  typedef google::protobuf::Reflection Reflection;
 
   // Get a Descriptor for this message's type.  This describes what
   // fields the message contains, the types of those fields, etc.
@@ -669,14 +669,14 @@ class LIBPROTOBUF_EXPORT Reflection {
   RepeatedField<T>* MutableRepeatedField(
       Message*, const FieldDescriptor*) const;
 
-  // for T = string, gxxgle::protobuf::internal::StringPieceField
-  //         gxxgle::protobuf::Message & descendants.
+  // for T = string, google::protobuf::internal::StringPieceField
+  //         google::protobuf::Message & descendants.
   template<typename T>
   const RepeatedPtrField<T>& GetRepeatedPtrField(
       const Message&, const FieldDescriptor*) const;
 
-  // for T = string, gxxgle::protobuf::internal::StringPieceField
-  //         gxxgle::protobuf::Message & descendants.
+  // for T = string, google::protobuf::internal::StringPieceField
+  //         google::protobuf::Message & descendants.
   template<typename T>
   RepeatedPtrField<T>* MutableRepeatedPtrField(
       Message*, const FieldDescriptor*) const;
@@ -804,8 +804,8 @@ DECLARE_GET_REPEATED_FIELD(bool)
 // Implementation details for {Get,Mutable}RawRepeatedPtrField.  We provide
 // specializations for <string>, <StringPieceField> and <Message> and handle
 // everything else with the default template which will match any type having
-// a method with signature "static const gxxgle::protobuf::Descriptor* descriptor()".
-// Such a type presumably is a descendant of gxxgle::protobuf::Message.
+// a method with signature "static const google::protobuf::Descriptor* descriptor()".
+// Such a type presumably is a descendant of google::protobuf::Message.
 
 template<>
 inline const RepeatedPtrField<string>& Reflection::GetRepeatedPtrField<string>(
@@ -862,5 +862,5 @@ inline RepeatedPtrField<PB>* Reflection::MutableRepeatedPtrField(
 
 }  // namespace protobuf
 
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_MESSAGE_H__

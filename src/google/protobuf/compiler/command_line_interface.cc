@@ -70,7 +70,7 @@
 #include <google/protobuf/stubs/stl_util.h>
 
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace compiler {
 
@@ -1600,4 +1600,4 @@ void CommandLineInterface::PrintFreeFieldNumbers(
 
 }  // namespace compiler
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

@@ -48,7 +48,7 @@
 #include <google/protobuf/stubs/strutil.h>
 #include <google/protobuf/stubs/map_util.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace compiler {
 
@@ -1747,4 +1747,4 @@ void SourceLocationTable::Clear() {
 
 }  // namespace compiler
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

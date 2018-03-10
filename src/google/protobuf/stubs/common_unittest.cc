@@ -40,7 +40,7 @@
 
 #include "config.h"
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace {
 
@@ -354,4 +354,4 @@ TEST_F(ClosureTest, TestPermanentClosureDeleteInCallback) {
 
 }  // anonymous namespace
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

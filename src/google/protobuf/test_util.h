@@ -40,7 +40,7 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/unittest.pb.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 namespace unittest = ::protobuf_unittest;
@@ -211,5 +211,5 @@ class TestUtil {
 
 }  // namespace protobuf
 
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_TEST_UTIL_H__

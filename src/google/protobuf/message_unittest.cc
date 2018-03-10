@@ -56,7 +56,7 @@
 #include <google/protobuf/testing/googletest.h>
 #include <gtest/gtest.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 #ifndef O_BINARY
@@ -424,4 +424,4 @@ TEST(MessageFactoryTest, GeneratedFactoryUnknownType) {
 
 
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

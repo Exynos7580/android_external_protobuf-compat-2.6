@@ -36,7 +36,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 // Perform a lookup in a map or hash_map.
@@ -114,6 +114,6 @@ bool InsertIfNotPresent(Collection * const collection,
 }
 
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google
 
 #endif  // GOOGLE_PROTOBUF_STUBS_MAP_UTIL_H__

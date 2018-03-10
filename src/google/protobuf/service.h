@@ -61,7 +61,7 @@
 //
 //     // implements MyService ---------------------------------------
 //
-//     void Foo(gxxgle::protobuf::RpcController* controller,
+//     void Foo(google::protobuf::RpcController* controller,
 //              const MyRequest* request,
 //              MyResponse* response,
 //              Closure* done) {
@@ -103,7 +103,7 @@
 #include <string>
 #include <google/protobuf/stubs/common.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 // Defined in this file.
@@ -287,5 +287,5 @@ class LIBPROTOBUF_EXPORT RpcChannel {
 
 }  // namespace protobuf
 
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_SERVICE_H__

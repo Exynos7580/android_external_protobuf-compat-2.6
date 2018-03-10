@@ -96,7 +96,7 @@
 #include <google/protobuf/stubs/strutil.h>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace io {
 namespace {
@@ -1124,4 +1124,4 @@ bool Tokenizer::IsIdentifier(const string& text) {
 
 }  // namespace io
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google

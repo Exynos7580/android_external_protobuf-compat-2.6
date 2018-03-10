@@ -60,7 +60,7 @@
 #include <google/protobuf/stubs/common.h>
 
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 
 // Defined in this file.
@@ -1687,5 +1687,5 @@ inline const FieldDescriptor* OneofDescriptor::field(int index) const {
 
 }  // namespace protobuf
 
-}  // namespace gxxgle
+}  // namespace google
 #endif  // GOOGLE_PROTOBUF_DESCRIPTOR_H__

@@ -59,7 +59,7 @@
 #include <google/protobuf/testing/googletest.h>
 #include <gtest/gtest.h>
 
-namespace gxxgle {
+namespace google {
 namespace protobuf {
 namespace compiler {
 
@@ -1651,4 +1651,4 @@ TEST_F(EncodeDecodeTest, ProtoParseError) {
 
 }  // namespace compiler
 }  // namespace protobuf
-}  // namespace gxxgle
+}  // namespace google
